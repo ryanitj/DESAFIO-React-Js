@@ -36,3 +36,333 @@
     transform: rotate(360deg);
   }
 }
+
+.fishes
+{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.fish
+{
+  position: absolute;
+  top: 100%;
+  left: 80px;
+}
+.imgNotDragable{
+  -webkit-user-drag: none; 
+  user-select: none; 
+}
+
+.clock-and-logo-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.clock-container{
+  margin-top: 60px; 
+  margin-right: 150px;
+}
+
+.book-height{
+  height: 140px;
+}
+
+.shelf-container{
+  position:relative;
+  right:740px;
+  top:86px;
+}
+
+.clock-height{
+  height: 190px;
+}
+
+.ground-height{
+  height: 300px;
+}
+
+.lady-container{
+  z-index: 9;
+  height: 292px; 
+  max-width: 420px;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+
+.filter-button-height{
+  height: 38px;
+}
+
+.filter-buttons-container{
+   z-index: 12;
+   position: absolute;
+   bottom: 80px;
+   left: 220px;
+}
+
+.top-shelf-container{
+  height: 100px;
+}
+
+.dragable-zone-width{
+  width: 530px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (min-width: 1270px) {
+  .book-case-lg{
+    display: flex;
+    justify-content: center; 
+    margin-left: 685px; 
+    margin-top: -616px;
+  }
+
+  .book-case-height-lg{
+    height: 480px;
+  }
+
+  .top-shelf-container{
+    height: 150px !important;
+  }
+}
+
+
+
+@media (min-width: 750px) and (max-width: 1270px){
+  .book-case-lg{
+    display: flex;
+    margin-left: 553px; 
+    margin-top: -546px;
+    justify-content: center;
+  }
+
+  .book-case-height-lg{
+    height: 380px;
+  }
+
+  .book-height{
+    height: 100px;
+  }
+
+  .shelf-container{
+    position: relative;
+    right: 590px;
+    top: 76px;
+  }
+
+  .dragable-zone-width{
+    width: 417px;
+  }
+
+}
+
+
+@media (max-width: 750px){
+  .book-case-lg{
+    display: flex;
+    margin-left: 553px; 
+    margin-top: -546px;
+    justify-content: center;
+  }
+
+  .book-case-height-lg{
+    height: 380px;
+  }
+
+  .book-height{
+    height: 100px;
+  }
+
+  .shelf-container{
+    position: relative;
+    right: 590px;
+    top: 76px;
+  }
+
+  .top-shelf-container{
+    height: 100px;
+  }
+
+  .dragable-zone-width{
+    width: 417px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 560px){
+  .book-case-height-lg{
+    height: 270px;
+  }
+
+  .book-case-lg{
+    display: flex;
+    margin-left: 320px; 
+    margin-top: -546px;
+    justify-content: center;
+  }
+
+  .clock-and-logo-container{
+    justify-content: center;
+    margin-bottom: 230px !important;
+  }
+
+  .ground-height{
+    height: 370px;
+  }
+
+  .shelf-container{
+    position: relative;
+    right: 408px;
+    top: 58px;
+  }
+
+  .book-height{
+    height: 70px;
+  }
+
+  .single-shelf-container{
+    padding: 0px !important;
+  }
+
+  .clock-container{
+    margin-right: -40px !important; 
+  }
+
+  
+  .filter-button-height{
+    height: 24px;
+  }
+
+  .lady-container{
+    z-index: 9;
+    height: 220px; 
+    max-width: 400px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+  }
+
+  .filter-buttons-container{
+    z-index: 12;
+    position: absolute;
+    bottom: 60px;
+    left: 170px;
+ }
+
+ .top-shelf-container{
+  height:79px !important;
+}
+
+.dragable-zone-width{
+  width: 291px;
+}
+
+
+  
+}
+
+@media (max-width: 400px){
+  .book-case-height-lg{
+    height: 180px;
+  }
+
+  .book-case-lg{
+    display: flex;
+    margin-left: 210px; 
+    margin-top: -483px;
+    justify-content: center;
+  }
+
+  .clock-and-logo-container{
+    justify-content: center;
+    margin-bottom: 230px !important;
+  }
+
+  .ground-height{
+    height: 370px;
+  }
+
+  .shelf-container{
+    position: relative;
+    right: 272px;
+    top: 36px;
+  }
+
+  .book-height{
+    height: 43px;
+  }
+
+  .single-shelf-container{
+    padding: 0px !important;
+  }
+
+  .clock-container{
+    margin-right: -8px !important; 
+  }
+
+  
+  .filter-button-height{
+    height: 25px;
+  }
+
+  .lady-container{
+    z-index: 9;
+    height: 220px; 
+    max-width: 400px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+  }
+
+  .filter-buttons-container{
+    z-index: 12;
+    position: absolute;
+    bottom: 60px;
+    left: 170px;
+ }
+
+ .top-shelf-container{
+  height: 47px !important;
+}
+
+.dragable-zone-width{
+  width: 190px !important;
+}
+  
+}
+
+
+@media (max-width:1080px){
+  .hidden-lg-below{
+    display: none;
+  }
+
+  .clock-height{
+    height: 150px;
+  }
+
+  .clock-and-logo-container{
+    justify-content: center;
+    margin-bottom: 299px;
+  }
+
+  .clock-container{
+    margin-right: 0px;
+    margin-top: 0px;
+    top: 30px;
+    position: relative;
+  }
+}
+
+
+
+
+ 
