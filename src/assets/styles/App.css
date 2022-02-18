@@ -1,58 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.fishes
-{
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.fish
-{
-  position: absolute;
-  top: 100%;
-  left: 80px;
-}
-.imgNotDragable{
-  -webkit-user-drag: none; 
-  user-select: none; 
-}
+/* CONTAINERS */
 
 .clock-and-logo-container{
   display: flex;
@@ -65,22 +11,17 @@
   margin-right: 150px;
 }
 
-.book-height{
-  height: 140px;
-}
-
 .shelf-container{
   position:relative;
   right:740px;
   top:86px;
 }
 
-.clock-height{
-  height: 190px;
-}
-
-.ground-height{
-  height: 300px;
+.filter-buttons-container{
+  z-index: 12;
+  position: absolute;
+  bottom: 80px;
+  left: 220px;
 }
 
 .lady-container{
@@ -92,19 +33,42 @@
   left: 10px;
 }
 
+.top-shelf-container{
+  height: 100px;
+}
+
+/* HEIGHTS */
+
+.book-height{
+  height: 140px;
+}
+
+.clock-height{
+  height: 190px;
+}
+
+.ground-height{
+  height: 300px;
+}
+
 .filter-button-height{
   height: 38px;
 }
 
-.filter-buttons-container{
-   z-index: 12;
-   position: absolute;
-   bottom: 80px;
-   left: 220px;
+/* OTHERS */
+
+.filter-divider{
+  border-top: 3px solid gray; 
+  opacity: 0.3; 
+  margin-right: 15px; 
+  margin-left: 15px;
 }
 
-.top-shelf-container{
-  height: 100px;
+.text-filter-buttons{
+   text-align: center !important; 
+   margin-bottom: 2px !important; 
+   font-size: 14px !important;
+   color: #a9a9a9 !important;
 }
 
 .dragable-zone-width{
@@ -112,11 +76,7 @@
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* MEDIA QUERIES */
 
 @media (min-width: 1270px) {
   .book-case-lg{
@@ -163,6 +123,26 @@
     width: 417px;
   }
 
+  
+
+}
+
+/* LADY-AREA */
+
+@media(max-width: 1270px){
+  .lady-container{
+    height: 240px; 
+    max-width: 400px;
+  }
+
+  .filter-button-height{
+    height: 27px;
+  }
+
+  .filter-buttons-container{
+    bottom: 68px;
+    left: 190px;
+ }
 }
 
 
@@ -178,7 +158,7 @@
     height: 380px;
   }
 
-  .book-height{
+  .book-height{ 
     height: 100px;
   }
 
@@ -242,17 +222,11 @@
   }
 
   .lady-container{
-    z-index: 9;
     height: 220px; 
     max-width: 400px;
-    position: absolute;
-    bottom: 0px;
-    left: 10px;
   }
 
   .filter-buttons-container{
-    z-index: 12;
-    position: absolute;
     bottom: 60px;
     left: 170px;
  }
@@ -314,17 +288,11 @@
   }
 
   .lady-container{
-    z-index: 9;
     height: 220px; 
     max-width: 400px;
-    position: absolute;
-    bottom: 0px;
-    left: 10px;
   }
 
   .filter-buttons-container{
-    z-index: 12;
-    position: absolute;
     bottom: 60px;
     left: 170px;
  }
@@ -339,6 +307,8 @@
   
 }
 
+
+/* DISPLAY NONE CLOCK AND ADJUST LOGO */
 
 @media (max-width:1080px){
   .hidden-lg-below{
@@ -361,6 +331,9 @@
     position: relative;
   }
 }
+
+
+
 
 
 
