@@ -1,4 +1,4 @@
-# Projeto em React Js
+# DESAFIO - React Js
 
 A aplicação consiste em organizar e ordenar prateleiras com coleções de livros 
 
